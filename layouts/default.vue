@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nuxt />
+    <Nuxt />
   </div>
 </template>
 
@@ -17,13 +17,9 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fdfeff;
-}
-
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
 }
