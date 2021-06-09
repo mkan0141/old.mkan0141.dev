@@ -16,7 +16,14 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon',       href: '/favicon.ico', type: 'image/x-icon'},
+      { rel: "preconnect", href: "https://fonts.gstatic.com" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=M+PLUS+Rounded+1c:wght@700&display=swap" },
+    ],
+    script: [
+      { src: "https://kit.fontawesome.com/58241e016a.js", crossorigin: "anonymous" }
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
