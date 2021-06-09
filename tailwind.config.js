@@ -5,12 +5,17 @@
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
-  theme: {
-    colors: {
-      cello: '#35495e',
-      aliceblue: '#fdfeff',
-    }
-  },
-  variants: {},
-  plugins: []
-}
+    theme: {
+      colors: {
+        black:   '#252525',
+        white:   '#FFF',
+        gray:    '#A5B2BA',
+        puple:   '#CD288A',
+        green:   '#6CD04D',
+        blue:    '#376DC7',
+        skyblue: '#55AFE2',
+      }
+    },
+    variants: {},
+    plugins: []
+  }

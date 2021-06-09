@@ -1,37 +1,40 @@
 <template>
   <div class="container">
-    <div class="center">
-      <div class="bg-white">
-        <h1 class="title text-cello font-medium text-5xl mb-10">mkan0141</h1>
-        <ul class="">
-          <li class="inline-block mx-8">
-            <a href="https://github.com/mkan0141"><i class="fab fa-github fa-3x text-cello"></i></a>
-          </li>
-          <li class="inline-block mx-8">
-            <a href="https://twitter.com/mkan_0141"><i class="fab fa-twitter fa-3x text-cello twitter"></i></a>
-          </li>
-          <li class="inline-block mx-8">
-            <a href="https://speakerdeck.com/mkan0141"><i class="fab fa-speaker-deck fa-3x text-cello"></i></a>
-          </li>
-        </ul>
+    <div>
+      <Logo />
+      <h1 class="title">mkan0141.dev</h1>
+      <div class="links">
+        <a
+          href="https://nuxtjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--green"
+        >
+          Documentation
+        </a>
+        <a
+          href="https://github.com/nuxt/nuxt.js"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--grey"
+        >
+          GitHub
+        </a>
       </div>
     </div>
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 
-export default {
-  components: {
-    
-  }
-}
+export default Vue.extend({})
 </script>
 
 <style>
 /* Sample `apply` at-rules with Tailwind CSS
 .container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
+@apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
 .container {
@@ -46,17 +49,22 @@ export default {
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
   letter-spacing: 1px;
 }
 
-.title::after {
-  content: "\\ｺﾝﾆﾁﾜ\/";
-  font-size: 20px;
-  position: absolute;
-  transform: translateY(-10px) rotate(45deg);
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
 }
 
-.center {
-  top: 50%;
+.links {
+  padding-top: 15px;
 }
 </style>

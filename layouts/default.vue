@@ -1,8 +1,21 @@
 <template>
   <div>
-    <nuxt />
+    <Header />
+    <Nuxt />
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+
+import Header from '~/components/Header.vue'
+
+export default Vue.extend({
+  components: {
+    Header,
+  }
+})
+</script>
 
 <style>
 html {
@@ -17,13 +30,9 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fdfeff;
-}
-
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
 }
